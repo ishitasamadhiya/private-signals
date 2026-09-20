@@ -1,0 +1,21 @@
+# Licensed data: PitchBook exports must never be committed.
+data/*
+!data/README.md
+!data/synthetic_fixture.csv
+
+# Cached market data (re-downloadable via yfinance)
+cache/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
