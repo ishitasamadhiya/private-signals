@@ -19,3 +19,6 @@ dist/
 .DS_Store
 .vscode/
 .idea/
+
+# Derived panel joins licensed funding features to returns: never commit it.
+results/panel.csv

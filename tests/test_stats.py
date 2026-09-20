@@ -136,3 +136,23 @@ def test_walk_forward_splits_are_chronological_and_non_overlapping():
 def test_walk_forward_splits_rejects_too_few_periods():
     with pytest.raises(ValueError):
         walk_forward_splits(range(5), n_splits=4, min_train_frac=0.9)
+
+
+def test_block_bootstrap_with_block_one_matches_iid_bootstrap():
+    from private_signals.stats import block_bootstrap_ci
+    x = np.random.default_rng(6).normal(size=40)
+    a = bootstrap_ci(x, n_boot=3000, seed=1)
+    b = block_bootstrap_ci(x, block_len=1, n_boot=3000, seed=1)
+    assert b.estimate == pytest.approx(a.estimate)
+    assert b.ci_low == pytest.approx(a.ci_low, abs=0.05)
+    assert b.ci_high == pytest.approx(a.ci_high, abs=0.05)
+
+
+def test_block_bootstrap_is_wider_for_positively_autocorrelated_series():
+    from private_signals.stats import block_bootstrap_ci
+    rng = np.random.default_rng(8)
+    e = rng.normal(size=400)
+    x = np.convolve(e, np.ones(4) / 4, mode="valid")   # MA(3): strong positive autocorrelation
+    iid = block_bootstrap_ci(x, block_len=1, n_boot=3000)
+    blk = block_bootstrap_ci(x, block_len=4, n_boot=3000)
+    assert (blk.ci_high - blk.ci_low) > 1.3 * (iid.ci_high - iid.ci_low)

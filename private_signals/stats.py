@@ -201,3 +201,30 @@ def walk_forward_splits(periods, n_splits: int = 4, min_train_frac: float = 0.4)
     for a, b in zip(edges[:-1], edges[1:]):
         splits.append((periods[:a], periods[a:b]))
     return splits
+
+
+def block_bootstrap_ci(x, block_len: int = 1, n_boot: int = 10_000, alpha: float = 0.05,
+                       seed: int = 0) -> BootstrapResult:
+    """Circular moving-block bootstrap CI for the mean of a dependent series.
+
+    Consecutive observations are kept together in blocks of ``block_len`` so
+    that serial dependence (e.g. from overlapping multi-quarter forward
+    returns) is preserved in each resample. ``block_len=1`` reduces exactly to
+    the i.i.d. percentile bootstrap. Blocks wrap around the end of the series
+    (circular) so every observation is equally likely to be drawn.
+    """
+    x = np.asarray(x, dtype=float)
+    x = x[~np.isnan(x)]
+    n = len(x)
+    if n < 2:
+        raise ValueError("need at least two observations")
+    block_len = max(1, min(int(block_len), n))
+    n_blocks = int(np.ceil(n / block_len))
+    rng = np.random.default_rng(seed)
+    starts = rng.integers(0, n, size=(n_boot, n_blocks))
+    offsets = np.arange(block_len)
+    idx = (starts[:, :, None] + offsets[None, None, :]) % n
+    idx = idx.reshape(n_boot, -1)[:, :n]
+    samples = x[idx].mean(axis=1)
+    lo, hi = _percentile_ci(samples, alpha)
+    return BootstrapResult(float(x.mean()), lo, hi, n, n_boot, alpha, seed, samples)
