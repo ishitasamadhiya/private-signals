@@ -1,0 +1,25 @@
+{
+  "synthetic": true,
+  "private_source": "synthetic_fixture.csv",
+  "return_mode": "excess",
+  "signal_lag_quarters": 0,
+  "horizons_q": [
+    1,
+    2,
+    4
+  ],
+  "features": [
+    "funding_growth_qoq",
+    "deal_growth_qoq",
+    "funding_growth_yoy"
+  ],
+  "primary_feature": "funding_growth_qoq",
+  "sectors": "software->IGV, cybersecurity->HACK, biotech->XBI, semiconductors->SMH, fintech->FINX, technology->XLK, healthcare->XLV, financials->XLF, energy->XLE, industrials->XLI",
+  "market": "SPY",
+  "price_sample": "2014-01-02..2026-09-18",
+  "panel_quarters": "2014Q1..2026Q2",
+  "n_boot": 10000,
+  "n_perm": 5000,
+  "seed": 0,
+  "bh_q": 0.05
+}
