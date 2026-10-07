@@ -1,52 +1,52 @@
 id,family,feature,horizon_q,n,estimate,ci_low,ci_high,p,p_bh,verdict
-S01,sorts,funding_growth_qoq,1,47,-0.011108113401852832,-0.028753902273537645,0.006067997161521888,0.27334533093381325,0.7654469106178764,Null: no evidence of an effect at this horizon.
-S02,sorts,funding_growth_qoq,2,46,0.00026674754941541216,-0.022059528146880985,0.02289794943122209,0.9864027194561088,0.9864027194561087,Null: no evidence of an effect at this horizon.
-S03,sorts,funding_growth_qoq,4,44,0.015223040006665899,-0.023423765788642425,0.052000224187195236,0.5102979404119176,0.7654469106178764,Null: no evidence of an effect at this horizon.
-S04,sorts,deal_growth_qoq,1,47,-0.0005606336774315678,-0.02483522263219636,0.02168015116937634,0.9562087582483503,0.9864027194561087,Null: no evidence of an effect at this horizon.
-S05,sorts,deal_growth_qoq,2,46,0.013022337706051013,-0.011935700944816944,0.03653651735647145,0.3957208558288342,0.7654469106178764,Null: no evidence of an effect at this horizon.
-S06,sorts,deal_growth_qoq,4,44,0.03203079724470321,0.003558944161313032,0.06093829426120696,0.15756848630273945,0.7654469106178764,Nominally significant but does NOT survive BH correction (or the CI and the permutation test disagree). No claim.
-S07,sorts,funding_growth_yoy,1,45,0.007904101044834886,-0.010460026184964107,0.025438305316901135,0.45030993801239755,0.7654469106178764,Null: no evidence of an effect at this horizon.
-S08,sorts,funding_growth_yoy,2,44,0.017638577137603254,-0.013861364236498067,0.05032937216222138,0.2489502099580084,0.7654469106178764,Null: no evidence of an effect at this horizon.
-S09,sorts,funding_growth_yoy,4,42,-0.0009438556157287606,-0.04286811850093516,0.03960171582794264,0.9632073585282943,0.9864027194561087,Null: no evidence of an effect at this horizon.
-P01,pooled,funding_growth_qoq,1,457,-0.008997654906666493,-0.09966422596190207,0.07833446475888226,0.8442311537692462,0.9292141571685664,Null: no evidence of an effect at this horizon.
-P02,pooled,funding_growth_qoq,2,447,0.029937330441250447,-0.05251755785758709,0.11097673005137274,0.49250149970005996,0.7387522495500899,Null: no evidence of an effect at this horizon.
-P03,pooled,funding_growth_qoq,4,427,0.05351042982269286,-0.04096036782577656,0.14568809384469278,0.242751449710058,0.728254349130174,Null: no evidence of an effect at this horizon.
-P04,pooled,deal_growth_qoq,1,457,-0.003931546581415969,-0.10207207742488494,0.09071244358422806,0.9292141571685663,0.9292141571685664,Null: no evidence of an effect at this horizon.
-P05,pooled,deal_growth_qoq,2,447,0.031687396452463594,-0.053325967548720724,0.12261597592077421,0.47750449910017995,0.7387522495500899,Null: no evidence of an effect at this horizon.
-P06,pooled,deal_growth_qoq,4,427,0.047289707461097855,-0.04976508069151535,0.14385680796333314,0.3333333333333333,0.7387522495500899,Null: no evidence of an effect at this horizon.
-P07,pooled,funding_growth_yoy,1,441,0.05365390911609399,-0.028913233589883965,0.13523988138711907,0.1913617276544691,0.728254349130174,Null: no evidence of an effect at this horizon.
-P08,pooled,funding_growth_yoy,2,431,0.06416602217066254,-0.020514668747372844,0.15220304313162905,0.1887622475504899,0.728254349130174,Null: no evidence of an effect at this horizon.
-P09,pooled,funding_growth_yoy,4,411,0.009779431718206347,-0.09851163439544414,0.11865523429783696,0.8364327134573085,0.9292141571685664,Null: no evidence of an effect at this horizon.
-B-biotech-1q,by_sector,funding_growth_qoq,1,47,0.18293246993524515,,,0.21635672865426914,0.8113377324535093,Null: no evidence of an effect at this horizon.
-B-biotech-2q,by_sector,funding_growth_qoq,2,46,0.19087264878199198,,,0.20835832833433313,0.8113377324535093,Null: no evidence of an effect at this horizon.
-B-biotech-4q,by_sector,funding_growth_qoq,4,44,0.14827343199436221,,,0.33413317336532694,0.8353329334133174,Null: no evidence of an effect at this horizon.
-B-cybersecurity-1q,by_sector,funding_growth_qoq,1,44,0.2346723044397463,,,0.1315736852629474,0.6578684263147371,Null: no evidence of an effect at this horizon.
-B-cybersecurity-2q,by_sector,funding_growth_qoq,2,43,0.09045605557233465,,,0.5688862227554489,0.8981060930671008,Null: no evidence of an effect at this horizon.
-B-cybersecurity-4q,by_sector,funding_growth_qoq,4,41,0.04912891986062718,,,0.759248150369926,0.9110977804439112,Null: no evidence of an effect at this horizon.
-B-energy-1q,by_sector,funding_growth_qoq,1,47,-0.1522895467160037,,,0.29574085182963405,0.8353329334133174,Null: no evidence of an effect at this horizon.
-B-energy-2q,by_sector,funding_growth_qoq,2,46,-0.07702744372494603,,,0.608878224355129,0.8981060930671008,Null: no evidence of an effect at this horizon.
-B-energy-4q,by_sector,funding_growth_qoq,4,44,0.11374207188160676,,,0.46250749850029993,0.8981060930671008,Null: no evidence of an effect at this horizon.
-B-financials-1q,by_sector,funding_growth_qoq,1,47,-0.15356151711378355,,,0.3053389322135573,0.8353329334133174,Null: no evidence of an effect at this horizon.
-B-financials-2q,by_sector,funding_growth_qoq,2,46,-0.01893308664816528,,,0.8968206358728255,0.9584083183363329,Null: no evidence of an effect at this horizon.
-B-financials-4q,by_sector,funding_growth_qoq,4,44,0.09062720225510923,,,0.5632873425314937,0.8981060930671008,Null: no evidence of an effect at this horizon.
-B-fintech-1q,by_sector,funding_growth_qoq,1,37,-0.380986249407302,,,0.02299540091981604,0.34493101379724056,Nominally significant but does NOT survive BH correction (or the CI and the permutation test disagree). No claim.
-B-fintech-2q,by_sector,funding_growth_qoq,2,36,-0.31994851994851997,,,0.060587882423515295,0.4544091181763647,Null: no evidence of an effect at this horizon.
-B-fintech-4q,by_sector,funding_growth_qoq,4,34,0.09946524064171124,,,0.5654869026194761,0.8981060930671008,Null: no evidence of an effect at this horizon.
-B-healthcare-1q,by_sector,funding_growth_qoq,1,47,0.2875809435707678,,,0.04939012197560488,0.4544091181763647,Nominally significant but does NOT survive BH correction (or the CI and the permutation test disagree). No claim.
-B-healthcare-2q,by_sector,funding_growth_qoq,2,46,0.25982115325316063,,,0.07798440311937613,0.46790641871625677,Null: no evidence of an effect at this horizon.
-B-healthcare-4q,by_sector,funding_growth_qoq,4,44,0.3550387596899225,,,0.016196760647870425,0.34493101379724056,Nominally significant but does NOT survive BH correction (or the CI and the permutation test disagree). No claim.
-B-industrials-1q,by_sector,funding_growth_qoq,1,47,-0.01191026827012026,,,0.9358128374325135,0.9584083183363329,Null: no evidence of an effect at this horizon.
-B-industrials-2q,by_sector,funding_growth_qoq,2,46,-0.022756706753006475,,,0.880623875224955,0.9584083183363329,Null: no evidence of an effect at this horizon.
-B-industrials-4q,by_sector,funding_growth_qoq,4,44,-0.0142353770260747,,,0.9294141171765646,0.9584083183363329,Null: no evidence of an effect at this horizon.
-B-semiconductors-1q,by_sector,funding_growth_qoq,1,47,-0.007631822386679001,,,0.9584083183363328,0.9584083183363329,Null: no evidence of an effect at this horizon.
-B-semiconductors-2q,by_sector,funding_growth_qoq,2,46,0.05852605612087573,,,0.6824635072985403,0.9110977804439112,Null: no evidence of an effect at this horizon.
-B-semiconductors-4q,by_sector,funding_growth_qoq,4,44,0.05806906272022551,,,0.7034593081383723,0.9110977804439112,Null: no evidence of an effect at this horizon.
-B-software-1q,by_sector,funding_growth_qoq,1,47,-0.09343200740055504,,,0.5282943411317736,0.8981060930671008,Null: no evidence of an effect at this horizon.
-B-software-2q,by_sector,funding_growth_qoq,2,46,0.04964539007092199,,,0.7396520695860828,0.9110977804439112,Null: no evidence of an effect at this horizon.
-B-software-4q,by_sector,funding_growth_qoq,4,44,-0.15560253699788584,,,0.3183363327334533,0.8353329334133174,Null: no evidence of an effect at this horizon.
-B-technology-1q,by_sector,funding_growth_qoq,1,47,-0.07365864939870491,,,0.6282743451309738,0.8981060930671008,Null: no evidence of an effect at this horizon.
-B-technology-2q,by_sector,funding_growth_qoq,2,46,0.1282146160962072,,,0.39992001599680066,0.8981060930671008,Null: no evidence of an effect at this horizon.
-B-technology-4q,by_sector,funding_growth_qoq,4,44,-0.07568710359408033,,,0.6286742651469706,0.8981060930671008,Null: no evidence of an effect at this horizon.
-W01,walk_forward,funding_growth_qoq,1,28,-0.02044720203333881,-0.04407947654358179,0.002658583338411849,,,Sign agreement in 2/4 folds. OOS CI includes 0. Descriptive: no hypothesis test entered into BH.
-W02,walk_forward,funding_growth_qoq,2,28,-0.003306587624156848,-0.030006505475713763,0.022316684296140442,,,Sign agreement in 2/4 folds. OOS CI includes 0. Descriptive: no hypothesis test entered into BH.
-W03,walk_forward,funding_growth_qoq,4,26,0.009760261656936024,-0.04329967152024232,0.060133131823694966,,,Sign agreement in 4/4 folds. OOS CI includes 0. Descriptive: no hypothesis test entered into BH.
+S01,sorts,funding_growth_qoq,1,47,0.010661350343165914,-0.006670399553480784,0.029405502477762493,0.29454109178164367,0.4481103779244151,Null: no evidence of an effect at this horizon.
+S02,sorts,funding_growth_qoq,2,46,0.0210607485457956,-0.004612576175766309,0.04859471887718038,0.17056588682263546,0.4481103779244151,Null: no evidence of an effect at this horizon.
+S03,sorts,funding_growth_qoq,4,44,0.012892573265038433,-0.02236224570282132,0.047926007862880586,0.5762847430513898,0.6483203359328135,Null: no evidence of an effect at this horizon.
+S04,sorts,deal_growth_qoq,1,47,0.007767482373857448,-0.013698019939016535,0.02958092214572008,0.4481103779244151,0.576141914474248,Null: no evidence of an effect at this horizon.
+S05,sorts,deal_growth_qoq,2,46,0.02807078917315864,-0.0013390920555171612,0.05969799261341869,0.06678664267146571,0.4481103779244151,Null: no evidence of an effect at this horizon.
+S06,sorts,deal_growth_qoq,4,44,-0.005916845014846585,-0.043303769038318944,0.028883523047753445,0.7958408318336333,0.7958408318336333,Null: no evidence of an effect at this horizon.
+S07,sorts,funding_growth_yoy,1,45,0.011872739124027719,-0.00844901578830607,0.033573810967986936,0.2551489702059588,0.4481103779244151,Null: no evidence of an effect at this horizon.
+S08,sorts,funding_growth_yoy,2,44,-0.01592961165961573,-0.04020636684416701,0.009497012008604477,0.29874025194961007,0.4481103779244151,Null: no evidence of an effect at this horizon.
+S09,sorts,funding_growth_yoy,4,42,-0.037570705182288985,-0.08115547968770964,0.0072175415613524,0.10677864427114576,0.4481103779244151,Null: no evidence of an effect at this horizon.
+P01,pooled,funding_growth_qoq,1,457,0.021611269724960736,-0.07189428815108966,0.11486051506507136,0.644871025794841,0.644871025794841,Null: no evidence of an effect at this horizon.
+P02,pooled,funding_growth_qoq,2,447,0.08928087742756537,0.00462173633992048,0.17640592342196998,0.03219356128774245,0.144871025794841,Nominally significant but does NOT survive BH correction (or the CI and the permutation test disagree). No claim.
+P03,pooled,funding_growth_qoq,4,427,0.03518121136810136,-0.057547018962302555,0.1263584960025889,0.41971605678864227,0.5802553774959293,Null: no evidence of an effect at this horizon.
+P04,pooled,deal_growth_qoq,1,457,0.05046942634816462,-0.05797361037988399,0.15155932517056447,0.3017396520695861,0.543131373725255,Null: no evidence of an effect at this horizon.
+P05,pooled,deal_growth_qoq,2,447,0.08408269169041084,-0.03128581614819224,0.19346231812121045,0.013197360527894421,0.11877624475104978,Nominally significant but does NOT survive BH correction (or the CI and the permutation test disagree). No claim.
+P06,pooled,deal_growth_qoq,4,427,0.01741699123263435,-0.09186662320913493,0.12397049744282079,0.621875624875025,0.644871025794841,Null: no evidence of an effect at this horizon.
+P07,pooled,funding_growth_yoy,1,441,0.07165089812148635,-0.0314104533693438,0.17037134507117968,0.05438912217556489,0.16316736652669467,Null: no evidence of an effect at this horizon.
+P08,pooled,funding_growth_yoy,2,431,0.03201676289141891,-0.0672725251505249,0.12969061890500302,0.4513097380523895,0.5802553774959293,Null: no evidence of an effect at this horizon.
+P09,pooled,funding_growth_yoy,4,411,-0.052933103563903613,-0.16144942756621836,0.058219503885584854,0.27754449110177964,0.543131373725255,Null: no evidence of an effect at this horizon.
+B-biotech-1q,by_sector,funding_growth_qoq,1,47,-0.04104995374653099,,,0.7858428314337133,0.9775975839314897,Null: no evidence of an effect at this horizon.
+B-biotech-2q,by_sector,funding_growth_qoq,2,46,0.26993524514338574,,,0.0687862427514497,0.644871025794841,Null: no evidence of an effect at this horizon.
+B-biotech-4q,by_sector,funding_growth_qoq,4,44,0.06765327695560254,,,0.6692661467706459,0.9775975839314897,Null: no evidence of an effect at this horizon.
+B-cybersecurity-1q,by_sector,funding_growth_qoq,1,44,0.025792811839323467,,,0.8680263947210558,0.9775975839314897,Null: no evidence of an effect at this horizon.
+B-cybersecurity-2q,by_sector,funding_growth_qoq,2,43,-0.03035336756266989,,,0.8488302339532093,0.9775975839314897,Null: no evidence of an effect at this horizon.
+B-cybersecurity-4q,by_sector,funding_growth_qoq,4,41,0.07439024390243902,,,0.6490701859628074,0.9775975839314897,Null: no evidence of an effect at this horizon.
+B-energy-1q,by_sector,funding_growth_qoq,1,47,0.026017576318223868,,,0.8688262347530494,0.9775975839314897,Null: no evidence of an effect at this horizon.
+B-energy-2q,by_sector,funding_growth_qoq,2,46,0.14609929078014183,,,0.32693461307738453,0.9775975839314897,Null: no evidence of an effect at this horizon.
+B-energy-4q,by_sector,funding_growth_qoq,4,44,0.11317829457364341,,,0.45350929814037194,0.9775975839314897,Null: no evidence of an effect at this horizon.
+B-financials-1q,by_sector,funding_growth_qoq,1,47,0.034574468085106384,,,0.8192361527694461,0.9775975839314897,Null: no evidence of an effect at this horizon.
+B-financials-2q,by_sector,funding_growth_qoq,2,46,0.2561208757323466,,,0.08598280343931214,0.644871025794841,Null: no evidence of an effect at this horizon.
+B-financials-4q,by_sector,funding_growth_qoq,4,44,0.27286821705426356,,,0.08218356328734253,0.644871025794841,Null: no evidence of an effect at this horizon.
+B-fintech-1q,by_sector,funding_growth_qoq,1,37,0.011853959222380275,,,0.94501099780044,0.9775975839314897,Null: no evidence of an effect at this horizon.
+B-fintech-2q,by_sector,funding_growth_qoq,2,36,-0.09009009009009009,,,0.5932813437312537,0.9775975839314897,Null: no evidence of an effect at this horizon.
+B-fintech-4q,by_sector,funding_growth_qoq,4,34,0.07288006111535524,,,0.6740651869626075,0.9775975839314897,Null: no evidence of an effect at this horizon.
+B-healthcare-1q,by_sector,funding_growth_qoq,1,47,-0.04521276595744681,,,0.7620475904819036,0.9775975839314897,Null: no evidence of an effect at this horizon.
+B-healthcare-2q,by_sector,funding_growth_qoq,2,46,-0.12784458834412582,,,0.3915216956608678,0.9775975839314897,Null: no evidence of an effect at this horizon.
+B-healthcare-4q,by_sector,funding_growth_qoq,4,44,0.014799154334038054,,,0.9188162367526495,0.9775975839314897,Null: no evidence of an effect at this horizon.
+B-industrials-1q,by_sector,funding_growth_qoq,1,47,0.010753931544865866,,,0.943011397720456,0.9775975839314897,Null: no evidence of an effect at this horizon.
+B-industrials-2q,by_sector,funding_growth_qoq,2,46,0.047301880974406414,,,0.7460507898420315,0.9775975839314897,Null: no evidence of an effect at this horizon.
+B-industrials-4q,by_sector,funding_growth_qoq,4,44,0.07864693446088795,,,0.6026794641071785,0.9775975839314897,Null: no evidence of an effect at this horizon.
+B-semiconductors-1q,by_sector,funding_growth_qoq,1,47,0.033880666049953746,,,0.827634473105379,0.9775975839314897,Null: no evidence of an effect at this horizon.
+B-semiconductors-2q,by_sector,funding_growth_qoq,2,46,-0.0014184397163120568,,,0.99500099980004,0.99500099980004,Null: no evidence of an effect at this horizon.
+B-semiconductors-4q,by_sector,funding_growth_qoq,4,44,-0.08851303735024665,,,0.5662867426514697,0.9775975839314897,Null: no evidence of an effect at this horizon.
+B-software-1q,by_sector,funding_growth_qoq,1,47,0.1152867715078631,,,0.4353129374125175,0.9775975839314897,Null: no evidence of an effect at this horizon.
+B-software-2q,by_sector,funding_growth_qoq,2,46,0.1253777366635831,,,0.395120975804839,0.9775975839314897,Null: no evidence of an effect at this horizon.
+B-software-4q,by_sector,funding_growth_qoq,4,44,-0.1368569415081043,,,0.3743251349730054,0.9775975839314897,Null: no evidence of an effect at this horizon.
+B-technology-1q,by_sector,funding_growth_qoq,1,47,0.14812673450508787,,,0.3099380123975205,0.9775975839314897,Null: no evidence of an effect at this horizon.
+B-technology-2q,by_sector,funding_growth_qoq,2,46,-0.03780450200431699,,,0.7978404319136173,0.9775975839314897,Null: no evidence of an effect at this horizon.
+B-technology-4q,by_sector,funding_growth_qoq,4,44,-0.35616631430584916,,,0.01839632073585283,0.5518896220755849,Nominally significant but does NOT survive BH correction (or the CI and the permutation test disagree). No claim.
+W01,walk_forward,funding_growth_qoq,1,28,0.022249375126814595,-0.004635482431597942,0.050728160247482515,,,Sign agreement in 3/4 folds. OOS CI includes 0. Descriptive: no hypothesis test entered into BH.
+W02,walk_forward,funding_growth_qoq,2,28,0.033610157154699026,-0.0035761812701972473,0.07286785535878883,,,Sign agreement in 4/4 folds. OOS CI includes 0. Descriptive: no hypothesis test entered into BH.
+W03,walk_forward,funding_growth_qoq,4,26,0.026902433588300502,-0.028200335820029083,0.07951564977320114,,,Sign agreement in 2/4 folds. OOS CI includes 0. Descriptive: no hypothesis test entered into BH.

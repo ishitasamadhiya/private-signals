@@ -1,7 +1,7 @@
 {
   "synthetic": false,
   "private_source": "pitchbook_export.csv",
-  "return_mode": "excess",
+  "return_mode": "vol_adj",
   "signal_lag_quarters": 0,
   "horizons_q": [
     1,
