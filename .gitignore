@@ -22,3 +22,5 @@ dist/
 
 # Derived panel joins licensed funding features to returns: never commit it.
 results/panel.csv
+**/panel.csv
+results/robustness/*/figures/

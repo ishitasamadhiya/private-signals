@@ -1,8 +1,32 @@
 """Sector -> ETF mapping.
 
-PitchBook verticals and public sector ETFs do not line up one-to-one, so this
-mapping is a judgment call. It lives in one place so it can be argued with and
-edited to match however the PitchBook export was built.
+PitchBook's taxonomy and public sector ETFs do not line up one-to-one, so this
+mapping is a judgment call. It lives in one place so it can be argued with.
+
+How each study sector is sourced from PitchBook (see scripts/convert_pitchbook_pivot.py):
+
+    study sector    PitchBook dimension            label                      ETF
+    technology      Primary Industry Sector        Information Technology     XLK
+    healthcare      Primary Industry Sector        Healthcare                 XLV
+    financials      Primary Industry Sector        Financial Services         XLF
+    energy          Primary Industry Sector        Energy                     XLE
+    industrials     Primary Industry Sector        B2B (Business Products
+                                                   and Services)              XLI
+    software        Primary Industry Group         Software                   IGV
+    semiconductors  Primary Industry Group         Semiconductors             SMH
+    biotech         Primary Industry Code          Biotechnology              XBI
+    cybersecurity   Vertical                       Cybersecurity              HACK
+    fintech         Vertical                       FinTech                    FINX
+
+Known looseness, stated up front:
+* "industrials" uses PitchBook's whole B2B sector, which is broader than XLI
+  (it includes business services and commercial products of all kinds).
+* Verticals are multi-valued tags, so a deal can count toward both
+  cybersecurity and fintech, and toward its primary sector as well.
+* The ten series therefore overlap (software is inside technology, biotech
+  inside healthcare, fintech straddles technology and financials). The
+  cross-sectional sorts treat them as ten separate sectors anyway; overlap
+  works against finding a spread, not for it.
 """
 from dataclasses import dataclass
 
