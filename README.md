@@ -5,8 +5,21 @@ public-market returns for that sector?**
 
 A small, reproducible study built to be argued with. Every experiment has a
 protocol, a confidence interval, a permutation p-value, a multiple-testing
-correction, and a verdict, recorded in [`ledger.md`](ledger.md). A null result
-is a valid outcome here and is reported as such.
+correction, and a verdict, recorded in [`ledger.md`](ledger.md).
+
+## In one look
+
+![headline](figures/headline.png)
+
+Sort the ten sectors each quarter by funding growth, go long the top third and
+short the bottom third, hold two quarters, and you appear to earn about 2% per
+half-year beta-neutral. Lag the funding data by one quarter, which is what a
+real investor has to do because PitchBook back-fills deals for weeks after they
+close, and the spread falls to 1.3% with a p-value of 0.39. The lag-0 spread
+is also generated almost entirely by the 2021 venture boom and 2022 bust. The
+study's answer is no; the useful part is the demonstration of how a plausible
+alternative-data signal is a look-ahead artifact, caught by a pre-registered
+check rather than by hindsight.
 
 > **Status: complete.** The committed ledger and figures are from the real
 > run on PitchBook data (US VC and growth deals, 2014Q1 to 2026Q2, exported
@@ -65,10 +78,11 @@ and 5,000 permutations per test; a full run takes about a minute.
 
 ## Findings
 
-**Headline: no.** Across 48 pre-specified tests, none survives Benjamini-Hochberg
-correction at q = 0.05 within its family. The data do not support the claim that
-a sector's private funding growth leads its public, beta-neutral ETF return at
-1, 2 or 4 quarters. Full detail, including every CI and p-value, is in
+**The answer is no, and the interesting part is why it briefly looked like yes.**
+Across 48 pre-specified tests, none survives Benjamini-Hochberg correction at
+q = 0.05 within its family. The data do not support the claim that a sector's
+private funding growth leads its public, beta-neutral ETF return at 1, 2 or 4
+quarters. Full detail, including every CI and p-value, is in
 [`ledger.md`](ledger.md).
 
 What the data do show, stated at the strength the evidence supports:
@@ -116,10 +130,11 @@ same sectors, so a strong lead would imply public markets ignore widely
 reported funding data for months. The data are consistent with public
 markets incorporating that information within the quarter it arrives.
 
-Figures (`figures/`): `sort_spreads.png` (spread with CI per feature and
-horizon), `cumulative_spread_{1,2,4}q.png` (cumulative spread with walk-forward
-folds), `sector_rank_corr_heatmap.png`, `bh_pvalues.png` (sorted p-values
-against the BH line, per family).
+Figures (`figures/`): `headline.png` (the lag-0 versus lag-1 comparison above),
+`sort_spreads.png` (spread with CI per feature and horizon),
+`cumulative_spread_{1,2,4}q.png` (cumulative spread with walk-forward folds),
+`sector_rank_corr_heatmap.png`, `bh_pvalues.png` (sorted p-values against the
+BH line, per family).
 
 ## Data policy
 
@@ -184,6 +199,7 @@ private_signals/
   ledger.py       renders ledger.md
   figures.py      matplotlib figures
 scripts/
-  run_experiments.py, convert_pitchbook_pivot.py, make_synthetic_fixture.py
+  run_experiments.py, convert_pitchbook_pivot.py, make_headline_figure.py,
+  make_synthetic_fixture.py
 tests/            pytest suites for stats, loader, panel, experiments
 ```
